@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- Admin Styling -->
+    <link rel="stylesheet" href="../../css/admin.css" />
+
+    <title>Admin-Profile</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text">Flight Hint</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+            Sailesh
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Admin Page Wrapper -->
+    <div class="admin-wrapper">
+      <!-- Left Sidebar -->
+      <div class="left-sidebar">
+        <ul>
+          <li><a href="admin_home.html">Home</a></li>
+          <li><a href="admin_profile.html">Profile</a></li>
+          <li><a href="">Predict Prices</a></li>
+          <li><a href="">Book Tickets</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+      <!-- // Left Sidebar -->
+
+      <!-- Admin Content -->
+      <div class="admin-content">
+        <div class="content">
+          <h2 class="page-title">Edit User Profile</h2>
+
+          <form>
+            <div>
+              <label>Username</label><br /><br />
+              <input
+                type="text"
+                name="username"
+                class="usertext-input"
+                value="Gokul "
+                disabled
+              />
+              <button type="button" class="btn btn-big" id="editusername">
+                Edit
+              </button>
+            </div>
+            <br />
+            <div>
+              <label>Email</label><br /><br />
+              <input
+                type="email"
+                name="email"
+                class="usertext-input"
+                value="gokul.s2019@vitstudent.ac.in"
+                disabled
+              />
+              <button type="button" class="btn btn-big" id="editusername">
+                Edit
+              </button>
+            </div>
+            <br />
+            <div>
+              <label>Mobile</label><br /><br />
+              <input
+                type="number"
+                name="number"
+                class="usertext-input"
+                value="9988773322"
+                disabled
+              />
+              <button type="button" class="btn btn-big" id="editnumber">
+                Edit
+              </button>
+            </div>
+            <br />
+            <div>
+              <label>Gender</label><br /><br />
+              <input
+                type="text"
+                name="gender"
+                class="usertext-input"
+                value="Male"
+                disabled
+              />
+              <button type="button" class="btn btn-big" id="editgender">
+                Edit
+              </button>
+            </div>
+            <br />
+            <div>
+              <label>Date Of Birth</label><br /><br />
+              <input
+                type="date"
+                name="dob"
+                class="usertext-input"
+                value="2000-10-03"
+                disabled
+              />
+              <button type="button" class="btn btn-big" id="editdob">
+                Edit
+              </button>
+            </div>
+            <br />
+            <div>
+              <a href="admin_home.html" class="btn btn-big">Go Back</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- // Admin Content -->
+    </div>
+    <!-- // Page Wrapper -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Ckeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+    <!-- Custom Script -->
+    <script src="../../js/scripts.js"></script>
+  </body>
+</html>

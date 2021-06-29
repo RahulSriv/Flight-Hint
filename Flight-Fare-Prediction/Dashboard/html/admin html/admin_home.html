@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Candal|Lora"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- Admin Styling -->
+    <link rel="stylesheet" href="../../css/admin.css" />
+
+    <title>Admin-Home</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text">Flight Hint</h1>
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-user"></i>
+            Sailesh
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Admin Page Wrapper -->
+    <div class="admin-wrapper">
+      <!-- Left Sidebar -->
+      <div class="left-sidebar">
+        <ul>
+          <li><a href="admin_home.html">Home</a></li>
+          <li><a href="admin_profile.html">Profile</a></li>
+          <li><a href="">Predict Prices</a></li>
+          <li><a href="">Book Tickets</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+      <!-- // Left Sidebar -->
+
+      <!-- Admin Content -->
+      <div class="admin-content">
+        <div class="buttongroup">
+          <a href="add_flights.html" class="btn btn-big">Add Flights</a>
+          <a href="add_user.html" class="btn btn-big">Add Users</a>
+        </div>
+
+        <div class="content">
+          <br />
+          <h2 class="page-title">Manage Flights</h2>
+
+          <table>
+            <thead>
+              <th>SN</th>
+              <th>Name</th>
+              <th>Date of Journey</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Departure Time</th>
+              <th>Arrival Time</th>
+              <th>Duration</th>
+              <th>Stops</th>
+              <th>Price</th>
+              <th colspan="2" style="text-align: center">Action</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>IndiGo</td>
+                <td>24/05/2021</td>
+                <td>Bangalore</td>
+                <td>New Delhi</td>
+                <td>22:20</td>
+                <td>01:10 22 Mar</td>
+                <td>2h 50m</td>
+                <td>non-stop</td>
+                <td>3897</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Air India</td>
+                <td>1/05/2021</td>
+                <td>Kolkata</td>
+                <td>Bangalore</td>
+                <td>05:50</td>
+                <td>13:15</td>
+                <td>7h 25m</td>
+                <td>2 stops</td>
+                <td>7662</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jet Airways</td>
+                <td>9/06/2021</td>
+                <td>Delhi</td>
+                <td>coachin</td>
+                <td>95:25</td>
+                <td>04:25 10 Jun</td>
+                <td>19h</td>
+                <td>2 stops</td>
+                <td>13882</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="content">
+          <h2 class="page-title">Manage Users</h2>
+
+          <table>
+            <thead>
+              <th>SN</th>
+              <th>Username</th>
+              <th>Role</th>
+              <th colspan="2">Action</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sailesh</td>
+                <td>Admin</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Rahul</td>
+                <td>Admin</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Gokul</td>
+                <td>Customer</td>
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- // Admin Content -->
+    </div>
+    <!-- // Page Wrapper -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Custom Script -->
+    <script src="../../js/scripts.js"></script>
+  </body>
+</html>
